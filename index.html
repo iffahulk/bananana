@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Saranghae Street Food</title>
+    <link rel="stylesheet" href="real.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+<body onload="startTime()">
+
+  <div class="pagescroll">
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#menu">MENU</a></li>
+      <li><a href="#promo">PROMOTIONS</a></li>
+      <li><a href="#order">ORDERING</a></li>
+      <li><a href="#location">LOCATIONS</a></li>
+      <li><a href="#contact">CONTACT US</a></li>
+      <li><a id="txt"></a></li>
+    </ul></div><br><hr>
+
+    <div class="pic">
+      <br><img src="mash.jpeg">
+    </div>
+
+    <br><div id="home" class="section">
+      <div class = "desc">
+      <span><a> <strong>HISTORY</strong> </a></span><hr>
+      Street food in South Korea has traditionally been seen as a part of popular culture.
+      There are many kinds of traditional street food in South Korea. For example, glutinous rice cake (called Chapssal-tteok)
+      with buckwheat jelly, Bbopgi which is a Korea traditional ice cream, a fish shaped bun with bean jam called Bungeo-ppang,
+      roasted sweet potato, and Chinese pancakes with brown sugar filling (called Hotteok). The traditional street foods are
+      most common in the winter season; in the summer season ice cream is more popular. Street food has been sold through many
+      types of retail outlet, with new ones being developed over time.<br><br>
+      <br><span><a> <strong>POPULAR STREET FOOD PLACES IN KOREA</strong> </a></span><hr>
+      Myeong-dong is very popular for street foods. From traditional food such as chicken skewers
+      to unique new concepts of food such as deep-fried blue crab, grilled scallops and more. The street food of Myeong-dong
+      has become famous. Most foreign tourists who visit Myeong-dong make have their meals at the stalls.
+      There are 200 stalls in Myeong-dong, half of which are food stalls.</div><br></div>
+
+      <br><div id="menu" class="section">
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Menu</button>
+      <button class="btn" onclick="filterSelection('food')"> Main Dishes</button>
+      <button class="btn" onclick="filterSelection('side')"> Side Dishes</button>
+      <button class="btn" onclick="filterSelection('drink')"> Drink</button>
+    </div>
+
+    <div class="row">
+      <div class="column food">
+        <div class="content">
+          <img src="https://www.thevocket.com/app/uploads/2015/09/makanan-halal-korea-6-720x720.jpg" alt="food" style="width:100%">
+          <h4>Seafood fried Rice</h4>
+          <p>It’s the type of South Korean food that tastes good any day of the week or for whatever mood you’re in.
+             Don’t forget to eat Seafood fried rice with a side of kimchi!</p>
+             <p>Price: RM 32</p>
+        </div>
+      </div>
+      <div class="column food">
+        <div class="content">
+          <img src="http://www.objekwisata.com/wp-content/uploads/2016/02/Bibimbap.jpg" alt="food" style="width:100%">
+          <h4>Bibimbap</h4>
+          <p>Bibimbap simply means mixed rice with meat and assorted vegetables</p>
+          <p>Price: RM 12</p>
+        </div>
+      </div>
+      <div class="column food">
+        <div class="content">
+          <img src="https://farm8.staticflickr.com/7055/7098098391_856d8710a2_z.jpg" alt="food" style="width:100%">
+          <h4>Spicy Stir Fried Octopus (Nakji Bokkeum 낙지볶음) </h4>
+          <p>It’s baby octopus stir-fried with bean sprouts, onions, sesame seeds, and a spicy sauce.
+            Only make sure that you have no plans the next morning. Your butt will be on fire.</p>
+          <p>-Price: RM 23</p>
+        </div>
+      </div>
+      <div class="column food">
+        <div class="content">
+          <img src="https://farm6.staticflickr.com/5338/6952023914_d657dc6729_z.jpg" alt="food" style="width:100%">
+          <h4>Mixed Seafood Stew </h4>
+          <p>Jjigae hot chili infested stews is the massively flavorful seafood variation made with whatever kind of seafood
+             is on hand all boiled in a hot earthenware pot of goodness.</p>
+             <p>Price: RM 25</p>
+        </div>
+      </div>
+      <div class="column food">
+        <div class="content">
+          <img src="https://farm8.staticflickr.com/7104/7098192877_c3015c19d5_b.jpg" alt="food" style="width:100%">
+          <h4>Kimchi Stew (Kimchi Jjigae 김치찌개) </h4>
+          <p>Napa cabbage kimchi is boiled and a few other seasonings and ingredients and
+            then brewed into a stew that boasts intense flavors</p>
+            <p>Price: RM 15</p>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="content">
+          <img src="https://farm8.staticflickr.com/7180/6952109912_7f929160d1_b.jpg" alt="side dishes" style="width:100%">
+          <h4>Steamed Mandu Dumplings (Jjinmandu 찐만두)</h4>
+          <p>Korean mandu dumplings are noodle like wrappers stuffed with a variety of different ingredients.</p>
+          <p>Price: RM 10 for a plate</p>
+        </div>
+      </div>
+      <div class="column side">
+        <div class="content">
+          <img src="https://farm8.staticflickr.com/7051/6952028266_e478513226_z.jpg" alt="side dishes" style="width:100%">
+          <h4>Deep Fried Mandu (Yaki Mandu)</h4>
+          <p>Most delicious when serving piping hot and dipped in the soy vinegar sauce provided.</p>
+          <p>Price: RM 10 for a plate</p>
+        </div>
+      </div>
+      <div class="column side">
+        <div class="content">
+          <img src="https://farm8.staticflickr.com/7056/7098196437_3a1f3bdb04_b.jpg" alt="side dishes" style="width:100%">
+          <h4>Mung Bean Pancake (Bindaetteok 빈대떡)</h4>
+          <p>Made from ground mung beans, green onions and kimchi,
+             this beauty was deep fried and served with a vinaigrette dipping sauce.</p>
+             <p>Price: RM 12</p>
+        </div>
+      </div>
+      <div class="column side">
+        <div class="content">
+          <img src="6952023238_4c3ff06e1b_z.jpg" alt="side dishes" style="width:100%">
+          <h4>Gooey Deep Fried Snack (Hotteok 호떡)</h4>
+          <p>The vender had two options: One savory and one sweet.</p>
+          <p>Price: RM 7</p>
+        </div>
+      </div>
+      <div class="column side">
+        <div class="content">
+          <img src="https://farm8.staticflickr.com/7180/7098932367_edb18ab5d1_z.jpg" alt="side dishes" style="width:100%">
+          <h4>Gimbap 김밥</h4>
+          <p>Gimbap is an assemblage of sushi rice, a few Korean pickled vegetables, spinach, and ham all wrapped in
+            sheets of toasted seaweed.</p>
+            <p>Price: RM 12 per set</p>
+        </div>
+      </div>
+      <div class="column side">
+        <div class="content">
+          <img src="https://farm8.staticflickr.com/7049/6952023538_f5f55f56dd_z.jpg" alt="side dishes" style="width:100%">
+          <h4>Korean Side Dishes (Banchan반찬)</h4>
+          <p>This little bowl of curry pasted raw crab was one of the most memorable.
+             The crab was tender and awesomely tasty when coated in the thick red chili paste.</p>
+            <p>price: RM 11 </p>
+        </div>
+      </div>
+
+      <div class="column drink">
+        <div class="content">
+          <img src="https://images.pexels.com/photos/1208698/pexels-photo-1208698.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="drink" style="width:100%">
+          <h4>Strawberry Juice</h4>
+          <p>Price: RM 8(Medium),RM 9(Large)</p>
+        </div>
+      </div>
+      <div class="column drink">
+        <div class="content">
+          <img src="https://images.pexels.com/photos/96620/pexels-photo-96620.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="drink" style="width:100%">
+          <h4>Orange Juice</h4>
+          <p>Price: RM 8(Medium),RM 9(Large)</p>
+        </div>
+      </div>
+      <div class="column drink">
+        <div class="content">
+          <img src="https://images.pexels.com/photos/128242/pexels-photo-128242.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="drink" style="width:100%">
+          <h4>Lemon Juice</h4>
+          <p>Price: RM 8(Medium),RM 9(Large)</p>
+        </div>
+      </div>
+      <div class="column drink">
+        <div class="content">
+          <img src="https://images.pexels.com/photos/982612/pexels-photo-982612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="drink" style="width:100%">
+          <h4>Hot/iced Chocolate For You</h4>
+          <p>Price: RM 6(hot), RM 7(cold)</p>
+        </div>
+      </div>
+      <div class="column drink">
+        <div class="content">
+          <img src="https://images.pexels.com/photos/605408/pexels-photo-605408.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="drink" style="width:100%">
+          <h4>All Type of Drinks</h4>
+          <p>Order any drinks that you like,we can serve it for you!</p>
+          <p>Price: RM 4(hot,medium), RM 5(cold,medium), RM 6(hot,large), RM 7(cold,large)</p>
+        </div></div></div></div>
+
+      <br><div id="promo" class="section">
+        <h2>Promotion for this month!</h2>
+
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">Promotion #1</div>
+          <img src="595aaf179f708a7dff81563564_original..jpeg" style="height:600px;width:100%;opacity: 0.8">
+          <div class="text2">If you purchase exceed RM 200.00 per receipt,
+             you can choose one of any korean food from menu for <strong> free</strong>!</div>
+        </div>
+        <div class="mySlides fade">
+        <div class="numbertext">Promotion #2</div>
+        <img src="pexels-photo-248444.jpeg" style="height:600px;width:100%">
+        <div class="text">Sushi that made originally from our restaurant.
+          It is only <del>RM 30.00 per set</del> RM19 per set!</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">Promotion #3</div>
+        <img src="salmon-dish-food-meal-46239.jpeg" style="height:600px;width:100%">
+        <div class="text">Brown fish fillet with korean sauce that originally from Korea. it is only <del>RM 30.00</del> RM23!</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">Promotion #4</div>
+        <img src="pexels-photo-341048.png.jpeg" style="height:600px;width:100%">
+        <div class="text">Our new main dessert!cooked korean meat with korean sauce.
+        which costs only <del>RM 80.00</del> RM45!</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div></div>
+
+      <br><div id="order" class="section">
+        <details>
+          <summary>Let's place the order</summary>
+
+           <div class = "md">
+          <ul>
+            <a><h3>Main Dishes</h3></a>
+            <li>Seafood Fried Rice RM32</li>
+            <input class="setup-costs" type="checkbox" value="32">1 Plate
+            <input class="setup-costs" type="checkbox" value="64">2 Plate
+            <input class="setup-costs" type="checkbox" value="96">3 Plate
+            <input class="setup-costs" type="checkbox" value="128">4 Plate
+            <input class="setup-costs" type="checkbox" value="160">5 Plate<br><br>
+            <li>Bibimbap RM12</li>
+            <input class="setup-costs" type="checkbox" value="12">1 Bowl
+            <input class="setup-costs" type="checkbox" value="24">2 Bowl
+            <input class="setup-costs" type="checkbox" value="36">3 Bowl
+            <input class="setup-costs" type="checkbox" value="48">4 Bowl
+            <input class="setup-costs" type="checkbox" value="60">5 Bowl<br><br>
+            <li>Nakji Bokkeum RM23</li>
+            <input class="setup-costs" type="checkbox" value="23">1 Plate
+            <input class="setup-costs" type="checkbox" value="46">2 Plate
+            <input class="setup-costs" type="checkbox" value="69">3 Plate
+            <input class="setup-costs" type="checkbox" value="92">4 Plate
+            <input class="setup-costs" type="checkbox" value="115">5 Plate<br><br>
+            <li>Mixed Seafood Stew RM25</li>
+            <input class="setup-costs" type="checkbox" value="25">1 Bowl
+            <input class="setup-costs" type="checkbox" value="50">2 Bowl
+            <input class="setup-costs" type="checkbox" value="75">3 Bowl
+            <input class="setup-costs" type="checkbox" value="100">4 Bowl
+            <input class="setup-costs" type="checkbox" value="125">5 Bowl<br><br>
+            <li>Kimchi Stew RM15</li>
+            <input class="setup-costs" type="checkbox" value="15">1 Bowl
+            <input class="setup-costs" type="checkbox" value="30">2 Bowl
+            <input class="setup-costs" type="checkbox" value="45">3 Bowl
+            <input class="setup-costs" type="checkbox" value="60">4 Bowl
+            <input class="setup-costs" type="checkbox" value="75">5 Bowl<br>
+          </ul></div><br>
+
+          <div class = "side">
+         <ul>
+           <a><h3>Side Dishes</h3></a>
+           <li>Jjinmandu RM10</li>
+           <input class="setup-costs" type="checkbox" value="10">1 Plate
+           <input class="setup-costs" type="checkbox" value="20">2 Plate
+           <input class="setup-costs" type="checkbox" value="30">3 Plate
+           <input class="setup-costs" type="checkbox" value="40">4 Plate
+           <input class="setup-costs" type="checkbox" value="50">5 Plate<br><br>
+           <li>Yaki Mandu RM10</li>
+           <input class="setup-costs" type="checkbox" value="10">1 Plate
+           <input class="setup-costs" type="checkbox" value="20">2 Plate
+           <input class="setup-costs" type="checkbox" value="30">3 Plate
+           <input class="setup-costs" type="checkbox" value="40">4 Plate
+           <input class="setup-costs" type="checkbox" value="50">5 Plate<br><br>
+           <li>Bindaetteok RM12</li>
+           <input class="setup-costs" type="checkbox" value="12">1 Plate
+           <input class="setup-costs" type="checkbox" value="24">2 Plate
+           <input class="setup-costs" type="checkbox" value="36">3 Plate
+           <input class="setup-costs" type="checkbox" value="48">4 Plate
+           <input class="setup-costs" type="checkbox" value="60">5 Plate<br><br>
+           <li>Banchan RM11</li>
+           <input class="setup-costs" type="checkbox" value="11">1 Bowl
+           <input class="setup-costs" type="checkbox" value="22">2 Bowl
+           <input class="setup-costs" type="checkbox" value="33">3 Bowl
+           <input class="setup-costs" type="checkbox" value="44">4 Bowl
+           <input class="setup-costs" type="checkbox" value="55">5 Bowl<br><br>
+           <li>Gimbap RM12</li>
+           <input class="setup-costs" type="checkbox" value="12">1 Plate
+           <input class="setup-costs" type="checkbox" value="24">2 Plate
+           <input class="setup-costs" type="checkbox" value="36">3 Plate
+           <input class="setup-costs" type="checkbox" value="48">4 Plate
+           <input class="setup-costs" type="checkbox" value="60">5 Plate<br><br>
+           <li>Hotteok RM15</li>
+           <input class="setup-costs" type="checkbox" value="7">1 Piece
+           <input class="setup-costs" type="checkbox" value="14">2 Piece
+           <input class="setup-costs" type="checkbox" value="21">3 Piece
+           <input class="setup-costs" type="checkbox" value="28">4 Piece
+           <input class="setup-costs" type="checkbox" value="35">5 Piece<br>
+         </ul></div><br>
+
+         <div class = "drink">
+        <ul>
+          <a><h3>Drinks</h3></a>
+          <li>Strawberry Juice Medium(RM8) Large(RM9)</li>
+          <input class="setup-costs" type="checkbox" value="8">1 Medium
+          <input class="setup-costs" type="checkbox" value="16">2 Medium
+          <input class="setup-costs" type="checkbox" value="24">3 Medium
+          <input class="setup-costs" type="checkbox" value="32">4 Medium
+          <input class="setup-costs" type="checkbox" value="40">5 Medium<br>
+          <input class="setup-costs" type="checkbox" value="9">1 Large
+          <input class="setup-costs" type="checkbox" value="18">2 Large
+          <input class="setup-costs" type="checkbox" value="27">3 Large
+          <input class="setup-costs" type="checkbox" value="36">4 Large
+          <input class="setup-costs" type="checkbox" value="45">5 Large<br><br>
+          <li>Orange Juice Medium(RM8) Large(RM9)</li>
+          <input class="setup-costs" type="checkbox" value="8">1 Medium
+          <input class="setup-costs" type="checkbox" value="16">2 Medium
+          <input class="setup-costs" type="checkbox" value="24">3 Medium
+          <input class="setup-costs" type="checkbox" value="32">4 Medium
+          <input class="setup-costs" type="checkbox" value="40">5 Medium<br>
+          <input class="setup-costs" type="checkbox" value="9">1 Large
+          <input class="setup-costs" type="checkbox" value="18">2 Large
+          <input class="setup-costs" type="checkbox" value="27">3 Large
+          <input class="setup-costs" type="checkbox" value="36">4 Large
+          <input class="setup-costs" type="checkbox" value="45">5 Large<br><br>
+          <li>Honey Lemon Juice Medium(RM8) Large(RM9)</li>
+          <input class="setup-costs" type="checkbox" value="8">1 Medium
+          <input class="setup-costs" type="checkbox" value="16">2 Medium
+          <input class="setup-costs" type="checkbox" value="24">3 Medium
+          <input class="setup-costs" type="checkbox" value="32">4 Medium
+          <input class="setup-costs" type="checkbox" value="40">5 Medium<br>
+          <input class="setup-costs" type="checkbox" value="9">1 Large
+          <input class="setup-costs" type="checkbox" value="18">2 Large
+          <input class="setup-costs" type="checkbox" value="27">3 Large
+          <input class="setup-costs" type="checkbox" value="36">4 Large
+          <input class="setup-costs" type="checkbox" value="45">5 Large<br><br>
+          <li>Chocolate Hot(RM6) Cold(RM7)</li>
+          <input class="setup-costs" type="checkbox" value="6">1 Hot
+          <input class="setup-costs" type="checkbox" value="12">2 Hot
+          <input class="setup-costs" type="checkbox" value="18">3 Hot
+          <input class="setup-costs" type="checkbox" value="24">4 Hot
+          <input class="setup-costs" type="checkbox" value="30">5 Hot<br>
+          <input class="setup-costs" type="checkbox" value="7">1 Cold
+          <input class="setup-costs" type="checkbox" value="14">2 Cold
+          <input class="setup-costs" type="checkbox" value="21">3 Cold
+          <input class="setup-costs" type="checkbox" value="28">4 Cold
+          <input class="setup-costs" type="checkbox" value="35">5 Cold<br><br>
+          <li>Yours Hot-Medium(RM4) Cold-Medium(RM5) Hot-Large(RM7) Cold-Large(RM8)</li><br>
+          Yours: <input type="text">
+          <input class="setup-costs" type="checkbox" value="4">1 HotMedium
+          <input class="setup-costs" type="checkbox" value="8">2 HotMedium
+          <input class="setup-costs" type="checkbox" value="12">3 HotMedium
+          <input class="setup-costs" type="checkbox" value="16">4 HotMedium
+          <input class="setup-costs" type="checkbox" value="20">5 HotMedium<br><br>
+          <br>Yours: <input type="text">
+          <input class="setup-costs" type="checkbox" value="5">1 ColdMedium
+          <input class="setup-costs" type="checkbox" value="10">2 ColdMedium
+          <input class="setup-costs" type="checkbox" value="15">3 ColdMedium
+          <input class="setup-costs" type="checkbox" value="20">4 ColdMedium
+          <input class="setup-costs" type="checkbox" value="25">5 ColdMedium<br><br>
+          <br>Yours: <input type="text">
+          <input class="setup-costs" type="checkbox" value="7">1 HotLarge
+          <input class="setup-costs" type="checkbox" value="14">2 HotLarge
+          <input class="setup-costs" type="checkbox" value="21">3 HotLarge
+          <input class="setup-costs" type="checkbox" value="28">4 HotLarge
+          <input class="setup-costs" type="checkbox" value="35">5 HotLarge<br><br>
+          <br>Yours: <input type="text">
+          <input class="setup-costs" type="checkbox" value="8">1 ColdLarge
+          <input class="setup-costs" type="checkbox" value="16">2 ColdLarge
+          <input class="setup-costs" type="checkbox" value="24">3 ColdLarge
+          <input class="setup-costs" type="checkbox" value="32">4 ColdLarge
+          <input class="setup-costs" type="checkbox" value="40">5 ColdLarge<br>
+        </ul></div><br>
+
+        <div class = "pro">
+       <ul>
+         <a><h3>Promotions</h3></a>
+         <li>1 Free Dish Receipt (for receipt>RM200)</li>
+         <input class="setup-costs" type="checkbox" value="0">Seafood Fried Rice
+         <input class="setup-costs" type="checkbox" value="0">Bibimbap
+         <input class="setup-costs" type="checkbox" value="0">Nakji Bokkeum
+         <input class="setup-costs" type="checkbox" value="0">Mixed Seafood Stew
+         <input class="setup-costs" type="checkbox" value="0">Kimchi Stew
+         <input class="setup-costs" type="checkbox" value="0">Jjinmandu
+         <input class="setup-costs" type="checkbox" value="0">Yaki Mandu
+         <input class="setup-costs" type="checkbox" value="0">Bindaetteok
+         <input class="setup-costs" type="checkbox" value="0">Banchan
+         <input class="setup-costs" type="checkbox" value="0">Gimbap
+         <input class="setup-costs" type="checkbox" value="0">Hotteok<br>
+         <input class="setup-costs" type="checkbox" value="0">Strawberry Juice
+         <input class="setup-costs" type="checkbox" value="0">Orange Juice
+         <input class="setup-costs" type="checkbox" value="0">Honey Lemon Juice
+         <input class="setup-costs" type="checkbox" value="0">Chocolate<br><br>
+         <li>Sushi RM19</li>
+         <input class="setup-costs" type="checkbox" value="19">1 Plate
+         <input class="setup-costs" type="checkbox" value="38">2 Plate
+         <input class="setup-costs" type="checkbox" value="57">3 Plate
+         <input class="setup-costs" type="checkbox" value="76">4 Plate
+         <input class="setup-costs" type="checkbox" value="95">5 Plate<br><br>
+         <li>Brown Fish RM19</li>
+         <input class="setup-costs" type="checkbox" value="23">1 Plate
+         <input class="setup-costs" type="checkbox" value="46">2 Plate
+         <input class="setup-costs" type="checkbox" value="69">3 Plate
+         <input class="setup-costs" type="checkbox" value="92">4 Plate
+         <input class="setup-costs" type="checkbox" value="115">5 Plate<br><br>
+         <li>Special Meat RM49</li>
+         <input class="setup-costs" type="checkbox" value="45">1 Plate
+         <input class="setup-costs" type="checkbox" value="90">2 Plate
+         <input class="setup-costs" type="checkbox" value="135">3 Plate
+         <input class="setup-costs" type="checkbox" value="180">4 Plate
+         <input class="setup-costs" type="checkbox" value="225">5 Plate<br>
+       </ul></div></details>
+
+        <div class="pricebox">
+         <h3>Total Price = RM<span id="price">0</span></h3>
+       </div>
+       <hr>
+
+        <details>
+          <summary>Complete Your Order Here!</summary>
+          <form>
+            <fieldset>
+            <legend>Personal information:</legend>
+             Name:<br>
+            <input type="text" name="name">
+            <br>
+            Telephone Number:<br>
+            <input type="text" name="phonenumber">
+            <br>
+            Pax:<br>
+            <input type="text" name="pax">
+            <br>
+            Date and Time:<br>
+           <input type="datetime-local" name="dt">
+            <br><br>
+            Outlets:<br>
+            <input type="checkbox">Johor
+            <input type="checkbox">Selangor
+            <input type="checkbox">Kedah
+            <input type="checkbox">Perak
+            <input type="checkbox">Pahang<br><br>
+            Dine-in / Delivery:<br>
+            <input type="checkbox">Dine-In<br>
+            Delivery Address:<br>
+            <input type="text" name="pax"><br><br>
+            Payment:<br>
+            <input type="text" name="pay">
+            <br><br>
+           <textarea>State your reminder here.</textarea>
+            <br><br>
+            <button type="button" onclick="alert('Order Have Been Delivered!')">Submit!</button>
+            </fieldset>
+          </form></details></div><hr>
+
+      <br><div id="location" class="loc">
+      <table id="outlets">
+      <tr>
+        <th>Address</th>
+        <th>Contact</th>
+        <th>State</th>
+      </tr>
+      <tr>
+        <td>Paradigm Mall Level 3 No.348</td>
+        <td>09-7741231</td>
+        <td>Johor Darul Takzim</td>
+      </tr>
+      <tr>
+        <td>1 Utama Shopping Centre Ground Floor No.17</td>
+        <td>09-7741232</td>
+        <td>Selangor Darul Ehsan</td>
+      </tr>
+      <tr>
+        <td>Aman Central Mall Ground Floor no.10</td>
+        <td>09-7741233</td>
+        <td>Kedah Darul Aman</td>
+      </tr>
+      <tr>
+        <td>Angsana Mall Level 1 no.122</td>
+        <td>09-7741234</td>
+        <td>Perak Darul Ridzuan</td>
+      </tr>
+      <tr>
+        <td>East Coast Mall Level 2 No.218</td>
+        <td>09-7741235</td>
+        <td>Pahang Darul Makmur</td>
+      </tr></table><br>
+
+      <h3>Saranghae Street Food Location</h3>
+      <div id="map"></div></div>
+
+      <br><div id="contact" class="coninfo">
+          <a>CONTACT US AT : </a><hr>
+           <div class="row">
+            <div class="column">
+             <img src="ig.gif" alt="Insta">
+             <figcaption><a href="www.@SaranghaeAIAig.com">@SaranghaeAIAig</a></figcaption></div>
+            <div class="column">
+             <img src="fb.gif" alt="Faceb">
+             <figcaption><a href="www.@SaranghaeAIAfb.com">@SaranghaeAIAfb</a></figcaption></div>
+            <div class="column">
+             <img src="twitter.gif" alt="Tweet">
+             <figcaption><a href="www.@SaranghaeAIAtw.com">@SaranghaeAIAtw</a></figcaption></div>
+            <div class="column">
+             <img src="call.gif" alt="calling">
+             <figcaption><a href="www.@SaranghaeHotline.com">09-8442427</a></figcaption>
+        </div></div></div>
+
+    <footer>
+        <p>Saranghae Street Food Sdn Bhd (56372802-E). Copyright &copy; Saranghae Street Food Korean. All right Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="real.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBahHWG3PIkx-wYh859dznDMggqXsU9AK4&callback=initMap"
+    type="text/javascript"></script>
+
+  </body>
+</html>
